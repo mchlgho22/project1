@@ -91,17 +91,17 @@ Langkah yang dilakukan:
   1. Load pretrained model ImageNet
   2. Freeze sebagian besar layer
   3. Unfreeze layer lebih dalam:
-      • inception4
-      • inception5
+      - inception4
+      - inception5
   4. Mengganti classifier terakhir menjadi:
      Fully Connected Layer
      Output: 2 classes (Male, Female)
 
 Optimizer yang digunakan:
-  • Adam
-  • learning rate berbeda untuk setiap layer
+  - Adam
+  - learning rate berbeda untuk setiap layer
 
-Loss Function: CrossEntropyLoss
+Loss Function: CrossEntropyLoss <br>
 Learning rate scheduler: ReduceLROnPlateau
 
 ## Training Configuration
@@ -119,39 +119,39 @@ Model terbaik akan disimpan pada: model_saved/best_model.pth
 ## Training Visualization
 
 Selama training, sistem mencatat:
-  • Train Loss
-  • Test Loss
-  • Train Accuracy
-  • Test Accuracy
+  - Train Loss
+  - Test Loss
+  - Train Accuracy
+  - Test Accuracy
 
 Kemudian divisualisasikan dalam grafik:
-  • Loss per Epoch
-  • Accuracy per Epoch
+  - Loss per Epoch
+  - Accuracy per Epoch
 
 **Model Evaluation**
 
 Evaluasi model dilakukan menggunakan:
-  • Classification Report
-  • Confusion Matrix
+  - Classification Report
+  - Confusion Matrix
 
 Metode evaluasi menggunakan library:
-  • sklearn
-  • seaborn
-  • matplotlib
+  - sklearn
+  - seaborn
+  - matplotlib
 
 Output evaluasi:
-  • Precision
-  • Recall
-  • F1-score
-  • Support
+  - Precision
+  - Recall
+  - F1-score
+  - Support
 
 ## Prediction Visualization
 Model juga menampilkan hasil prediksi pada beberapa gambar test.
-  • Informasi yang ditampilkan:
-  • Gambar wajah
-  • Label asli
-  • Label prediksi
-  • Confidence score
+  - Informasi yang ditampilkan:
+  - Gambar wajah
+  - Label asli
+  - Label prediksi
+  - Confidence score
 
 ## Project Structure
 
@@ -171,14 +171,14 @@ Model juga menampilkan hasil prediksi pada beberapa gambar test.
     
 ## Requirements
 Library yang digunakan:
-torch
-torchvision
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-Pillow
+ - torch
+ - torchvision
+ - pandas
+ - numpy
+ - scikit-learn
+ - matplotlib
+ - seaborn
+ - Pillow
 
 
 
