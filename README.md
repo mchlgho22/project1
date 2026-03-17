@@ -44,17 +44,23 @@ Dataset dibagi menggunakan Stratified Split agar distribusi gender tetap seimban
  - Test set: 20%
 
 ## Struktur dataset
-   
-   Dataset/
-   │
-   ├── Images/
-   │   ├── 000001.jpg
-   │   ├── 000002.jpg
-   │   ├── ...
-   │
-   ├── list_attribute.txt
-   │
-   └── model_saved/
+
+Dataset link download : <a href="https://drive.google.com/drive/folders/1mMuXkAFu4IHOq8-p0Kr7zwhsVkW-0Kqj?usp=sharing" download>Google Drive</a>
+<ul>
+    <li>Dataset
+        <ul>
+            <li>Images
+                <ul>
+                    <li class="file">000001.jpg</li>
+                    <li class="file">000002.jpg</li>
+                    <li class="file">...</li>
+                </ul>
+            </li>
+            <li class="file">list_attribute.txt</li>
+            <li>model_saved</li>
+        </ul>
+    </li>
+</ul>
   
 ## Data Preprocessing
 
@@ -149,14 +155,20 @@ Model juga menampilkan hasil prediksi pada beberapa gambar test.
 
 ## Project Structure
 
-  FaceRecognition/
-  │
-  ├── Dataset/
-      ├── Images/
-      ├── list_attribute.txt
-      └── model_saved/
-
-
+<ul>
+    <li>Dataset
+        <ul>
+            <li>FaceRecognition
+                <ul>
+                    <li class="file">Images/</li>
+                    <li class="file">list_attribute.txt</li>
+                    <li class="file">model_saved/</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+    
 ## Requirements
 Library yang digunakan:
 torch
