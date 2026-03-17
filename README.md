@@ -43,7 +43,7 @@ Dataset dibagi menggunakan Stratified Split agar distribusi gender tetap seimban
  - Train set: 80%
  - Test set: 20%
 
-## Struktur dataset
+## Dataset Structure
 
 Dataset link download : <a href="https://drive.google.com/drive/folders/1mMuXkAFu4IHOq8-p0Kr7zwhsVkW-0Kqj?usp=sharing" download>Google Drive</a>
 <ul>
