@@ -67,21 +67,21 @@ Dataset link download : <a href="https://drive.google.com/drive/folders/1mMuXkAF
 Sebelum masuk ke model, gambar dilakukan preprocessing menggunakan Torchvision Transform:
 
 **Training Transform**
-  • Resize 224x224
-  • Random Horizontal Flip
-  • Random Rotation
-  • Color Jitter
-  • Normalization (ImageNet)
-  • Testing Transform
-  • Resize 224x224
-  • Normalization
+ - Resize 224x224
+ - Random Horizontal Flip
+ - Random Rotation
+ - Color Jitter
+ - Normalization (ImageNet)
+ - Testing Transform
+ - Resize 224x224
+ - Normalization
 
 Contoh transform:
-  Resize(224,224)
-  RandomHorizontalFlip()
-  RandomRotation(10)
-  ColorJitter()
-  Normalize(ImageNet mean/std)
+ - Resize(224,224) 
+ - RandomHorizontalFlip() 
+ - RandomRotation(10) 
+ - ColorJitter() 
+ - Normalize(ImageNet mean/std)
 
 ## Model Architecture
 
