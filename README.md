@@ -1,61 +1,62 @@
-**Face Recognition Gender Classification using GoogLeNet**
+# Face Recognition Gender Classification using GoogLeNet
 
 Proyek ini merupakan implementasi Face Recognition untuk klasifikasi gender (Male / Female) menggunakan arsitektur Deep Learning berbasis GoogLeNet dengan framework PyTorch.
 Model dilatih menggunakan dataset wajah dari CelebFaces Attributes Dataset dan memanfaatkan teknik transfer learning dari model pretrained ImageNet.
 
-**Project Overview**
+## Project Overview
 
 Tujuan proyek ini adalah membangun model computer vision yang mampu:
  - Mendeteksi wajah dari dataset gambar
  - Mengklasifikasikan gender:
-    • Male
-    • Female
+   - Male
+   - Female
 
-**Dataset**
+## Dataset
 
 Dataset yang digunakan berasal dari: CelebFaces Attributes Dataset (CelebA)
 
 Dataset berisi:
-  • lebih dari 200.000 gambar wajah
-  • 40 atribut wajah
+ - lebih dari 200.000 gambar wajah
+ - 40 atribut waja
 
 Pada proyek ini hanya digunakan atribut:
-  • Male
+ - Male
 
 Dataset kemudian diubah menjadi label:
 Attribute	Label
-  • Male	1
-  • Female	0
+ - 1  Male	
+ - 0  Female	
 
 Jumlah data yang digunakan:
-  • 5000 gambar wajah
-  • diambil secara random sampling
+ - 5000 gambar wajah
+ - diambil secara random sampling
 
 Distribusi data contoh:
-  Gender	Jumlah
-  Male	    2047
-  Female	  2953
+  | Gender        | Jumlah            |
+  | ------------- | ----------------- |
+  | Male          | 2047              |
+  | Female Size   | 2953              |
 
-**Data Preparation**
+## Data Preparation
 
 Dataset dibagi menggunakan Stratified Split agar distribusi gender tetap seimbang.
-  • Train set: 80%
-  • Test set: 20%
+ - Train set: 80%
+ - Test set: 20%
 
-**Struktur dataset:**
-
-  Dataset/
-  │
-  ├── Images/
-  │   ├── 000001.jpg
-  │   ├── 000002.jpg
-  │   ├── ...
-  │
-  ├── list_attribute.txt
-  │
-  └── model_saved/
+## Struktur dataset
+   
+   Dataset/
+   │
+   ├── Images/
+   │   ├── 000001.jpg
+   │   ├── 000002.jpg
+   │   ├── ...
+   │
+   ├── list_attribute.txt
+   │
+   └── model_saved/
   
-**Data Preprocessing**
+## Data Preprocessing
 
 Sebelum masuk ke model, gambar dilakukan preprocessing menggunakan Torchvision Transform:
 
@@ -76,7 +77,7 @@ Contoh transform:
   ColorJitter()
   Normalize(ImageNet mean/std)
 
-**Model Architecture**
+## Model Architecture
 
 Model yang digunakan adalah GoogLeNet (Inception v1) dengan transfer learning.
 
@@ -97,7 +98,7 @@ Optimizer yang digunakan:
 Loss Function: CrossEntropyLoss
 Learning rate scheduler: ReduceLROnPlateau
 
-**Training Configuration**
+## Training Configuration
 Parameter training:
   | Parameter     | Value             |
   | ------------- | ----------------- |
@@ -109,7 +110,7 @@ Parameter training:
   
 Model terbaik akan disimpan pada: model_saved/best_model.pth
 
-**Training Visualization**
+## Training Visualization
 
 Selama training, sistem mencatat:
   • Train Loss
@@ -138,7 +139,7 @@ Output evaluasi:
   • F1-score
   • Support
 
-**Prediction Visualization**
+## Prediction Visualization
 Model juga menampilkan hasil prediksi pada beberapa gambar test.
   • Informasi yang ditampilkan:
   • Gambar wajah
@@ -146,16 +147,17 @@ Model juga menampilkan hasil prediksi pada beberapa gambar test.
   • Label prediksi
   • Confidence score
 
-**Project Structure**
+## Project Structure
 
-  FaceRecognition-GoogLeNet/
+  FaceRecognition/
   │
   ├── Dataset/
-  │   ├── Images/
-  │   ├── list_attribute.txt
-  │   └── model_saved/
+      ├── Images/
+      ├── list_attribute.txt
+      └── model_saved/
 
-**Requirements**
+
+## Requirements
 Library yang digunakan:
 torch
 torchvision
