@@ -146,7 +146,7 @@ Output evaluasi:
 
 ## Prediction Visualization
 Model juga menampilkan hasil prediksi pada beberapa gambar test.
-  - Informasi yang ditampilkan:
+### Informasi yang ditampilkan:
   - Gambar wajah
   - Label asli
   - Label prediksi
