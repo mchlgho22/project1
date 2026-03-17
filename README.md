@@ -23,7 +23,6 @@ Pada proyek ini hanya digunakan atribut:
  - Male
 
 Dataset kemudian diubah menjadi label:
-Attribute	Label
  - 1  Male	
  - 0  Female	
 
